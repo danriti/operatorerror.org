@@ -1,0 +1,96 @@
+body > nav {
+  position: block;
+  padding-top: .35em;
+  padding-bottom: .35em;
+  form {
+    @include background-clip(padding-box);
+    margin: 0; padding: 0;
+    .search {
+      padding: .3em .5em .3em;
+      font-size: .85em;
+      @extend .sans;
+      line-height: 1.1em;
+      width: 95%;
+      @include border-radius(.5em);
+      @include background-clip(padding-box);
+      color: #888;
+      &:focus {
+        color: #444;
+        border-color: #80b1df;
+        @include box-shadow(#80b1df 0 0 4px, #80b1df 0 0 3px inset);
+        background-color: #fff;
+        outline: none;
+      }
+    }
+  }
+  fieldset[role=search]{ float: right; width: 48%; }
+  fieldset.mobile-nav{ float: left; width: 48%;
+    select{ width: 100%; font-size: .8em; border: 1px solid #888;}
+  }
+  ul { display: none; }
+  @media only screen and (min-width: 550px) {
+    font-size: .9em;
+    ul {
+      @include horizontal-list(0);
+      float: left;
+      display: block;
+      padding-top: .3em;
+    }
+    ul.subscription {
+      margin-left: .8em;
+      float: right;
+      li:last-child a { padding-right: 0; }
+    }
+    ul li {
+      margin: 0;
+    }
+    a {
+      /*@include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);*/
+      @extend .sans;
+      float: left;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 0;
+      line-height: 1.5em;
+    }
+    li + li {
+      margin-left: .8em;
+      a {
+        padding-left: .8em;
+      }
+    }
+    form {
+      float: right;
+      text-align: left;
+      padding-left: .8em;
+      .search {
+        width: 93%;
+        font-size: .95em;
+        line-height: 1.2em;
+      }
+    }
+    ul[data-subscription$=email] + form {
+      .search { width: 91%; }
+    }
+    fieldset.mobile-nav { display: none; }
+    fieldset[role=search]{ width: 99%; }
+  }
+}
+.no-placeholder {
+  body > nav .search {
+  }
+}
+@mixin mask-subscription-nav($feed: 'rss.png'){
+  position: relative; top: 0px;
+  text-indent: -999999em;
+  border: 0;
+  padding: 0;
+  &,&:after { @include mask-image($feed); }
+  &:after {
+    content: "";
+    position: absolute; top: -1px; left: 0;
+  }
+}
+.maskImage {
+  ul.subscription { position: relative; top: .2em; li, a { border: 0; padding: 0; }}
+}

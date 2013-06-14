@@ -1,0 +1,12 @@
+---
+layout: default
+title: List of categories
+---
+ <article class="page">
+<h1 class="title">Categories:</h1>
+
+    <ul class="cat">
+  	  {% assign categories_list = site.categories %}  
+  	  {% include categories_list.html %}
+  	</ul>
+</article>

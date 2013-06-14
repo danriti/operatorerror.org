@@ -1,0 +1,39 @@
+$noise-bg: image-url('site-background.png') top left !default;
+$background: image-url('site-background.png') top left !default;
+$img-border: #666;
+
+$main: #258fb8;
+$gray01: #666;
+$gray02: #999;
+$gray03: #ccc;
+$gray04: #ddd;
+$gray05: #fff;
+
+$orange: #f5841c;
+
+// Main Link Colors
+$link-color: darken(#36c, 35) !default;
+$link-color-hover: #36c !default; // desaturate(darken($link-color, 40), 25) 
+$link-color-visited: desaturate(#36c, 25) !default;
+$link-color-active: $link-color-visited !default;
+
+// Main Section Colors
+$title-color: #000 !default;
+$subtitle-color: #aaa !default;
+
+$text-color: #000 !default;
+$text-color-light: #666 !default;
+$type-border: #ddd !default;
+
+// Sidebar colors
+$sidebar-bg: transparent !default;
+$sidebar-link-color: $link-color !default;
+$sidebar-link-color-hover: $link-color-hover !default;
+$sidebar-link-color-active: $link-color-active !default;
+$sidebar-color: change-color(mix($text-color, $text-color, 80), $hue: hue($text-color), $saturation: saturation($text-color)/2) !default;
+$sidebar-border: desaturate(darken($text-color, 7), 10) !default;
+$sidebar-border-hover: darken($text-color, 7) !default;
+$sidebar-link-color-subdued: lighten($sidebar-color, 20) !default;
+$sidebar-link-color-subdued-hover: $sidebar-link-color-hover !default;
+$twitter-status-link: lighten($sidebar-link-color-subdued, 15) !default;
+

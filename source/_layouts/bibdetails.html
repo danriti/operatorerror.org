@@ -1,0 +1,29 @@
+---
+layout: default
+no_sidebar: true
+title: Publication details
+---
+ 
+<article class="page">
+<h1 class="title">Publication details <br/> "{{ page.entry.title }}" </h1> 
+<div style="text-align:right">by <i>{{ page.entry.author }}</i></div>
+
+<h4 class="title">Abstract:</h4>
+    <div id="main" class="entry">
+{{ page.entry.abstract }}
+    </div>
+<h4>Downloads:</h4>
+{% if page.entry.pdflink1 == empty or page.entry.pdflink1 == nil %}
+{% else %}
+<a href="{{page.entry.pdflink1}}">PDF</a>
+{% endif %}
+{% if page.entry.pptlink1 == empty  or page.entry.pptlink1 == nil %}
+{% else %}
+, <a href="{{page.entry.pptlink1}}">PPT</a> 
+{% endif %}
+
+<h4>BibTeX:</h4>
+{% codeblock lang:sh %}
+ {{ page.entry.bibtex }} 
+{% endcodeblock %}
+</article>

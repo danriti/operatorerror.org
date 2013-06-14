@@ -1,0 +1,14 @@
+$default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$monospace: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+
+$sans: 'HelveticaNeue-Light','HelveticaNeue',Helvetica,Arial,sans-serif !default;
+$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
+
+$heading-font-family: 'HelveticaNeue-CondensedBold','HelveticaNeue',Helvetica,Arial,sans-serif !default;
+$header-title-font-family: $heading-font-family !default;
+$header-subtitle-font-family: $sans !default;
+
+.heading {
+  font-family: $heading-font-family;
+}
+$meta-size: 0.9em;
