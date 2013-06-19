@@ -1,6 +1,6 @@
 ---
 title: Send a message to a HipChat Room using cURL
-author: Dan
+author: Dan Riti
 layout: post
 permalink: /2012/07/send-a-message-to-a-hipchat-room-using-curl/
 categories:
@@ -21,7 +21,7 @@ While many web based services offer hooks to make sending notification message t
 
 **NOTE:** If you haven&#8217;t generated a HipChat API Token yet, learn to do so [here][6].
 
-
+{% gist 3095606 %}
 
 **NOTE:** Make sure to change the parameters to fit your application and insert your authentication token!
 

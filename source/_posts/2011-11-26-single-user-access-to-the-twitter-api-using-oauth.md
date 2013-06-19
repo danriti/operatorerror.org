@@ -1,6 +1,6 @@
 ---
 title: Single User Access to the Twitter API using OAuth
-author: Dan
+author: Dan Riti
 layout: post
 permalink: /2011/11/single-user-access-to-the-twitter-api-using-oauth/
 categories:
@@ -19,40 +19,28 @@ If you haven&#8217;t already generated access tokens for your application, follo
 
 Grab the latest version of the <a title="python-oauth2" href="https://github.com/brosner/python-oauth2" target="_blank">python-oauth2</a> library. If you&#8217;re using another language, there might be an OAuth2 library available <a href="https://dev.twitter.com/docs/auth/oauth/single-user-with-examples" target="_blank">here</a>.
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="bash" style="font-family:monospace;"><span style="color: #666666;">$ </span><span style="color: #c20cb9; font-weight: bold;">git clone</span> https:<span style="color: #000000; font-weight: bold;">//</span>github.com<span style="color: #000000; font-weight: bold;">/</span>brosner<span style="color: #000000; font-weight: bold;">/</span>python-oauth2.git</pre>
-      </td>
-    </tr>
-  </table>
-</div>
+```bash
+$ git clone https://github.com/brosner/python-oauth2.git
+```
 
 Next, we&#8217;re gonna create a new python script called <a href="https://gist.github.com/1667574" target="_blank">twitter.py</a>.
 
-
+{% gist 1667574 %}
 
 Replace the following with your Twitter application OAuth values:
 
-*   YOUR\_CONSUMER\_KEY
-*   YOUR\_CONSUMER\_SECRET
-*   YOUR\_ACCESS\_TOKEN
-*   YOUR\_ACCESS\_TOKEN_SECRET
+-  YOUR\_CONSUMER\_KEY
+-  YOUR\_CONSUMER\_SECRET
+-  YOUR\_ACCESS\_TOKEN
+-  YOUR\_ACCESS\_TOKEN_SECRET
 
 Now run the script and you should get the following output:
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="bash" style="font-family:monospace;">$ .<span style="color: #000000; font-weight: bold;">/</span>twitter.py
-Hourly =<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000;">350</span>
-Remaining =<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000;">350</span></pre>
-      </td>
-    </tr>
-  </table>
-</div>
+```bash
+$ ./twitter.py
+Hourly => 350
+Remaining => 350
+```
 
 If you got 350 for your hourly limit, then you&#8217;ve successfully authenticated using OAuth (150 is the hourly limit for unauthenticated API requests)!
 

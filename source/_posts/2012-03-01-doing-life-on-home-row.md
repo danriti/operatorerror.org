@@ -1,6 +1,6 @@
 ---
 title: Doing Life on Home Row
-author: Dan
+author: Dan Riti
 layout: post
 permalink: /2012/03/doing-life-on-home-row/
 categories:
@@ -16,9 +16,7 @@ tags:
 ---
 I&#8217;ve always had a fascination with <a href="http://www.vim.org/" title="VIM" target="_blank">Vim</a>. For the unfamiliar, Vim is a text editor that disowns the mouse and challenges the user to put those 8th grade typing classes to good use. That&#8217;s right folks, you are now doing life on home row!
 
-<center>
-  <img src="http://i.imgur.com/VPYF1.jpg" alt="Home Row" />
-</center>
+![Home Row][1]
 
 My fascination with Vim started back in college during my *experimentation* days. You know what I&#8217;m talking about. The long, carefree nights, trying anything put on the table, and always looking for the next, better distribution.
 
@@ -30,9 +28,7 @@ At this time, it was impossible for me to avoid command line editing, so it was 
 
 <a href="http://www.youtube.com/watch?v=_NSn5RfxoXs" title="there was Jack" target="_blank">In the beginning</a>, Vim felt completely foreign to me and understandably so. All my life, I&#8217;ve used a computer with a mouse. From accidentally deleting Notepad on Windows 3.1 (Oops!) to playing Quake 3 on Windows ME, a mouse has always been firmly in my grip. Thus, when I began my foray into the world of ones and zeros, I naturally gravitated towards text editors designed to be used with a keyboard and a mouse. Forgive me father, for I have sinned.
 
-<center>
-  <img src="http://i.imgur.com/0xqgF.png" alt="Notepad on Windows 3.1" />
-</center>
+![Notepad on Windows 3.1][2]
 
 Even through all this, I never felt the desire to use Vim as my full time text editor. The challenge and associated fears of relearning a skill (editing text) that you&#8217;ve done one way for years can be a bit daunting. Moving from <a href="http://notepad-plus-plus.org/" title="Notepad++" target="_blank">Notepad++</a> to <a href="http://macromates.com/" title="TextMate" target="_blank">TextMate</a> isn&#8217;t a big deal, because your proficiency can translate easily between &#8220;modeless&#8221; text editors. However, this all gets thrown out the window once you step in the Vim world. Don&#8217;t be afraid children, it&#8217;s well worth it.
 
@@ -59,3 +55,6 @@ Recommended:
 
 *   <a href="http://stackoverflow.com/questions/1497958/how-to-use-vim-registers" title="How to use registers in Vim" target="_blank">How to use registers in Vim</a> 
 *   <a href="http://stackoverflow.com/questions/235839/how-do-i-indent-multiple-lines-quickly-in-vi" title="How to indent quickly in Vim" target="_blank">How to Indent Quickly in Vim</a>
+
+ [1]: http://i.imgur.com/VPYF1.jpg
+ [2]: http://i.imgur.com/0xqgF.png
