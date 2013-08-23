@@ -11,18 +11,13 @@ tags:
 ---
 I just recently finished up a project at work that required float-point number comparison and initially stumbled into the **float-point comparison pitfall** displayed below:
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="ada" style="font-family:monospace;"><span style="color: #00007f;">if</span> <span style="color: #66cc66;">&#40;</span>float_a == float_b<span style="color: #66cc66;">&#41;</span>
+```python
+
+if (float_a == float_b)
     // compare evaluates true.
-<span style="color: #00007f;">else</span>
-    // compare evaluates false.</pre>
-      </td>
-    </tr>
-  </table>
-</div>
+else
+    // compare evaluates false.
+```
 
 Of course, my team lead quickly pointed out my mistake while reviewing my code and I promptly smacked myself in the head for making such a rookie error!
 

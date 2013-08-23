@@ -1,6 +1,6 @@
 ---
 title: Find is Your Friend
-author: Dan
+author: Dan Riti
 layout: post
 permalink: /2010/09/find-is-your-friend/
 categories:
@@ -15,38 +15,20 @@ While both these commands are great to use individually, they really start to sh
 
 Find a string in all files and list the results:
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="bash" style="font-family:monospace;"><span style="color: #666666;">$ </span><span style="color: #c20cb9; font-weight: bold;">find</span> . <span style="color: #000000; font-weight: bold;">|</span> <span style="color: #c20cb9; font-weight: bold;">xargs</span> <span style="color: #c20cb9; font-weight: bold;">grep</span> <span style="color: #ff0000;">'searchString'</span></pre>
-      </td>
-    </tr>
-  </table>
-</div>
+```bash
+$ find . | xargs grep 'searchString'
+```
 
 Find a string in all files but only list the file names (note the &#8216;-sl&#8217; flag):
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="bash" style="font-family:monospace;"><span style="color: #666666;">$ </span><span style="color: #c20cb9; font-weight: bold;">find</span> . <span style="color: #000000; font-weight: bold;">|</span> <span style="color: #c20cb9; font-weight: bold;">xargs</span> <span style="color: #c20cb9; font-weight: bold;">grep</span> <span style="color: #ff0000;">'searchString'</span> <span style="color: #660033;">-sl</span></pre>
-      </td>
-    </tr>
-  </table>
-</div>
+```bash
+$ find . | xargs grep 'searchString'
+```
 
 Find a string in only C headers:
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="bash" style="font-family:monospace;"><span style="color: #666666;">$ </span><span style="color: #c20cb9; font-weight: bold;">find</span> . <span style="color: #660033;">-name</span> <span style="color: #ff0000;">"*.h"</span> <span style="color: #000000; font-weight: bold;">|</span> <span style="color: #c20cb9; font-weight: bold;">xargs</span> <span style="color: #c20cb9; font-weight: bold;">grep</span> <span style="color: #ff0000;">'searchString'</span></pre>
-      </td>
-    </tr>
-  </table>
-</div>
+```bash
+$ find . -name "*.h" | xargs grep 'searchString'
+```
 
 Enjoy!

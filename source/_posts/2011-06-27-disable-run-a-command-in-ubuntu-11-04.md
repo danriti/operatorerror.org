@@ -1,6 +1,6 @@
 ---
 title: 'Disable &#8216;Run A Command&#8217; in Ubuntu 11.04'
-author: Dan
+author: Dan Riti
 layout: post
 permalink: /2011/06/disable-run-a-command-in-ubuntu-11-04/
 categories:
@@ -14,8 +14,10 @@ tags:
 <p>I recently upgraded one of my laptops to Ubuntu 11.04 &#8220;Natty Narwhal&#8221; and I have had the <del><em>pleasure</em></del> opportunity to explore the new Unity user interface for GNOME. Immediately I was annoyed when I noticed that my keyboard shortcuts for switching workspaces (ALT+F1, ALT+F2, etc) were defaulted to several dedicated commands in the Unity shell. This was frustrating because the standard GNOME Keyboard Shortcuts were overlapping with these Unity based commands. So after a bit of digging on on the intertubes, here is how you can disable the &#8216;Run A Command (ALT+F2)&#8217; in the Unity shell:</p>
 <p><em>On a command line:</em></p>
 
-<div class="wp_syntax"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;">$ <span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> compizconfig-settings-manager
-$ ccsm <span style="color: #000000; font-weight: bold;">&amp;</span></pre></td></tr></table></div>
+```bash
+$ sudo apt-get install compizconfig-settings-manager
+$ ccsm &
+```
 
 <ul>
 <li>Select &#8216;Category &gt; Desktop &gt; Ubuntu Unity Plugin&#8217;</li>
