@@ -3,6 +3,7 @@ title: Using FFmpeg to stream audio in your home
 author: Dan Riti
 layout: post
 permalink: /2013/05/using-ffmpeg-to-stream-audio-in-your-house/
+comments: true
 categories:
   - Article
 tags:

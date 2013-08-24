@@ -3,6 +3,7 @@ title: Create a custom authentication decorator in Django
 author: Dan Riti
 layout: post
 permalink: /2012/07/create-a-custom-authentication-decorator-in-django/
+comments: true
 categories:
   - Article
 tags:
@@ -32,7 +33,16 @@ def my_view(request):
 
 This decorator is very useful, because I don&#8217;t have to actually change anything about my view to restrict access to it. However, what if you want to restrict a view to only authenticated users who are **currently active**? This can easily be accomplished with a custom decorator:
 
-{% gist 3156492 %}
+```python decorator.py https://gist.github.com/danriti/3156492#file-decorator-py View Gist
+from django.contrib.auth.decorators import user_passes_test, login_required
+
+active_required = user_passes_test(lambda u: u.is_active,
+                                   login_url='/profile/not_active')
+
+def active_and_login_required(view_func):
+    decorated_view_func = login_required(active_required(view_func))
+    return decorated_view_func
+```
 
 Thanks to the [user\_passes\_test][4] decorator that comes with Django, we can chain this together with the [login_required][3] to create our custom decorator.
 

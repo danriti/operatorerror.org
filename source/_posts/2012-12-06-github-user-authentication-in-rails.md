@@ -3,6 +3,7 @@ title: Github user authentication in Rails
 author: Dan Riti
 layout: post
 permalink: /2012/12/github-user-authentication-in-rails/
+comments: true
 categories:
   - Article
 tags:

@@ -3,6 +3,7 @@ title: Send a message to a HipChat Room using cURL
 author: Dan Riti
 layout: post
 permalink: /2012/07/send-a-message-to-a-hipchat-room-using-curl/
+comments: true
 categories:
   - Article
 tags:
@@ -21,7 +22,13 @@ While many web based services offer hooks to make sending notification message t
 
 **NOTE:** If you haven&#8217;t generated a HipChat API Token yet, learn to do so [here][6].
 
-{% gist 3095606 %}
+```bash hipchat.sh https://gist.github.com/danriti/3095606#file-hipchat-sh View Gist
+# Build Passes
+curl -d "room_id=ourRoom&from=BuildBot&message=Build+Status:+Passing&color=green" https://api.hipchat.com/v1/rooms/message?auth_token=AUTH_TOKEN_HERE&format=json
+
+# Build Fails
+curl -d "room_id=ourRoom&from=BuildBot&message=Build+Status:+Failing&color=red&notify=1" https://api.hipchat.com/v1/rooms/message?auth_token=AUTH_TOKEN_HERE&format=json
+```
 
 **NOTE:** Make sure to change the parameters to fit your application and insert your authentication token!
 
