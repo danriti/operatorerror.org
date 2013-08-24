@@ -3,6 +3,7 @@ title: Single User Access to the Twitter API using OAuth
 author: Dan Riti
 layout: post
 permalink: /2011/11/single-user-access-to-the-twitter-api-using-oauth/
+comments: true
 categories:
   - Article
 tags:

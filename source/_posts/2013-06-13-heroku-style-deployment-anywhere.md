@@ -3,6 +3,7 @@ title: Heroku style deployment anywhere
 author: Dan Riti
 layout: post
 permalink: /2013/06/heroku-style-deployment-anywhere/
+comments: true
 categories:
   - Article
 tags:

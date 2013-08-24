@@ -3,6 +3,7 @@ title: Send a message to a HipChat Room using cURL
 author: Dan Riti
 layout: post
 permalink: /2012/07/send-a-message-to-a-hipchat-room-using-curl/
+comments: true
 categories:
   - Article
 tags:

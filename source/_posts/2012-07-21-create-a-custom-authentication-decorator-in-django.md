@@ -3,6 +3,7 @@ title: Create a custom authentication decorator in Django
 author: Dan Riti
 layout: post
 permalink: /2012/07/create-a-custom-authentication-decorator-in-django/
+comments: true
 categories:
   - Article
 tags:

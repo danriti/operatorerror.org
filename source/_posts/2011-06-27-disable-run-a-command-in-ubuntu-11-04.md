@@ -3,6 +3,7 @@ title: 'Disable &#8216;Run A Command&#8217; in Ubuntu 11.04'
 author: Dan Riti
 layout: post
 permalink: /2011/06/disable-run-a-command-in-ubuntu-11-04/
+comments: true
 categories:
   - Article
 tags:

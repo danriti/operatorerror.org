@@ -3,6 +3,7 @@ title: Get a Facebook API Access Token that Never Expires
 author: Dan
 layout: post
 permalink: /2011/07/get-a-facebook-api-access-token-that-never-expires/
+comments: true
 categories:
   - Article
 tags:

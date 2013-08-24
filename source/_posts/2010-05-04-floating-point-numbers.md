@@ -3,6 +3,7 @@ title: Floating Point Numbers
 author: Dan
 layout: post
 permalink: /2010/05/floating-point-numbers/
+comments: true
 categories:
   - Article
 tags:

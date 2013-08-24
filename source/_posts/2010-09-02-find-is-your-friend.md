@@ -3,6 +3,7 @@ title: Find is Your Friend
 author: Dan Riti
 layout: post
 permalink: /2010/09/find-is-your-friend/
+comments: true
 categories:
   - Article
 tags:
