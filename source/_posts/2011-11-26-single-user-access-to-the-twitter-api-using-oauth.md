@@ -25,7 +25,37 @@ $ git clone https://github.com/brosner/python-oauth2.git
 
 Next, we&#8217;re gonna create a new python script called <a href="https://gist.github.com/1667574" target="_blank">twitter.py</a>.
 
-{% gist 1667574 %}
+```python twitter_api.py https://gist.github.com/danriti/1667574#file-twitter_api-py View Gist
+#!/usr/bin/python
+
+import simplejson as json
+
+import oauth2 as oauth
+
+# Create your consumer with the proper key/secret.
+consumer = oauth.Consumer(key="YOUR_CONSUMER_KEY",
+                          secret="YOUR_CONSUMER_SECRET")
+
+# Create your token with the proper key/secret.
+token = oauth.Token(key="YOUR_ACCESS_TOKEN",
+                    secret="YOUR_ACCESS_TOKEN_SECRET")
+
+# Request token URL for Twitter.
+rate_limit_url = "http://api.twitter.com/1/account/rate_limit_status.json"
+
+# Create our client.
+client = oauth.Client(consumer, token)
+
+# The OAuth Client request works just like httplib2 for the most part.
+resp, content = client.request(rate_limit_url, "GET")
+
+# Parse the JSON into a Python dictionary.
+data = json.loads(content)
+
+# Print hourly limits.
+print "Hourly    => %3d" % (data['hourly_limit'])
+print "Remaining => %3d" % (data['remaining_hits'])
+```
 
 Replace the following with your Twitter application OAuth values:
 
