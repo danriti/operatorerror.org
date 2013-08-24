@@ -12,7 +12,7 @@ I’m a computer engineer forging a path in the world of software development.
 
 By day, I currently work for <a href="https://appneta.com">Appneta</a> where I
 help keep the web <a href="http://www.appneta.com/products/traceview/">fast</a>.
-I also spent many years working on real-time embedded systems for a major
+In the past, I've also worked on real-time control systems for a major
 Department of Defense contractor.
 
 By night, I like to explore the open source world and its associated
