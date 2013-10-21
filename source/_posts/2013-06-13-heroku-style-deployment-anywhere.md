@@ -47,7 +47,7 @@ Now, on your server, we want to create a bare Git repository. This will be the d
 Next thing to do is setup our simple **post-receive** script. Let&#8217;s assume for the sake of this example that our blog is served on our web server from the following directory: **/www/myblog.com**. First create the hook in your git repository:
 
 ```bash
-[dan@server] $ touch ~/git/myblog.git/.git/hooks/post-receieve
+[dan@server] $ touch ~/git/myblog.git/.git/hooks/post-receive
 ```
 
 Then update the **post-receive** hook:
