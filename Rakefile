@@ -9,7 +9,7 @@ ssh_port       = "22"
 document_root  = ENV["OCTOPRESS_DOCUMENT_ROOT"]
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "rsync"
+deploy_default = "s3"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
@@ -242,6 +242,12 @@ task :rsync do
   end
   puts "## Deploying website via Rsync"
   ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
+end
+
+desc "Deploy website via s3"
+task :s3 do
+  puts "## Deploying website to s3"
+  ok_failed system("s3_website push")
 end
 
 desc "deploy public directory to github pages"
