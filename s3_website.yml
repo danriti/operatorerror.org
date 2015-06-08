@@ -1,6 +1,6 @@
-s3_id: <%= ENV['OPERATOR_ERROR_S3_ID'] %>
-s3_secret: <%= ENV['OPERATOR_ERROR_S3_SECRET'] %>
-s3_bucket: <%= ENV['OPERATOR_ERROR_S3_BUCKET'] %>
+s3_id: <%= ENV['AWS_STATIC_WEBSITE_S3_ID'] %>
+s3_secret: <%= ENV['AWS_STATIC_WEBSITE_S3_SECRET'] %>
+s3_bucket: operatorerror.org
 
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.
